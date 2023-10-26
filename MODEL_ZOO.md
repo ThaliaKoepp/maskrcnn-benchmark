@@ -1,4 +1,4 @@
-## Model Zoo and Baselines
+!# Model Zoo and Baselines
 
 ### Hardware
 - 8 NVIDIA V100 GPUs
@@ -36,8 +36,8 @@ R-50-FPN | Keypoint | 1x | 2 | 5.7 | 0.3771 | 9.4 | 0.10941 | 53.7 | 64.3 | 9981
 ### Light-weight Model baselines
 
 We provided pre-trained models for selected FBNet models. 
-* All the models are trained from scratched with BN using the training schedule specified below. 
-* Evaluation is performed on a single NVIDIA V100 GPU with `MODEL.RPN.POST_NMS_TOP_N_TEST` set to `200`. 
+# All the models are trained from scratched with BN using the training schedule specified below. 
+! Evaluation is performed on a single NVIDIA V100 GPU with `MODEL.RPN.POST_NMS_TOP_N_TEST` set to `200`. 
 
 The following inference time is reported:
   * inference total batch=8: Total inference time including data loading, model inference and pre/post preprocessing using 8 images per batch.
@@ -108,3 +108,4 @@ Mask R-CNN R-50 FPN | 37.7 & 33.9 | 37.5 & 34.4 | 37.8 & 34.2
 Mask R-CNN R-101 FPN | 40.0 & 35.9 | - | 40.1 & 36.1
 Mask R-CNN X-101-32x8d FPN | 42.1 & 37.3 | - | 42.2 & 37.8
 
+ 
